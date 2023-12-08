@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "email": "teste@gmail.com",
+      "password": "$2a$10$260ODAPsofMgnyaTYyHpC.VdI28WOwzQMrzdP6ShUoQJeeI/ZFzxy",
+      "firstname": "Gustavo",
+      "lastname": "Nobrega",
+      "age": "19",
+      "id": 1
+    },
+    {
+      "email": "teste1@gmail.com",
+      "password": "$2a$10$tqGk2SwGcOyTj/9un4OpKe1vGhpRrD/xYa7wM2AAxG/jWztCp5rNS",
+      "firstname": "Vivi",
+      "lastname": "tot",
+      "age": "20",
+      "id": 2
+    },
+    {
+      "email": "test3@gmail.com",
+      "password": "$2a$10$rNDmrsZUM.yVqpFmefktaODJHig2nvNz5OpfaeNCdF.jMNJketj02",
+      "firstname": "Dani",
+      "lastname": "Nobrega",
+      "age": "44",
+      "id": 3
+    }
+  ]
+}
