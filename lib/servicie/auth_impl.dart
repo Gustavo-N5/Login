@@ -4,10 +4,11 @@ import 'package:froms/servicie/auth.dart';
 
 class AuthImpl extends Auth {
   var uri = "http://10.0.2.2:3000/";
+  Dio dio = Dio();
 
   @override
   Future<User> login(String email, String senha) async {
-    var response = await Dio().post(
+    var response = await dio.post(
       "http://localhost:3000/login",
       data: {
         "email": email,
@@ -15,7 +16,7 @@ class AuthImpl extends Auth {
       },
     );
     if (response.statusCode == 200) {
-      return User.fromMap(response.data["user"]);
+      return User.fromMap(response.data["user"] as Map<String, dynamic>);
     }
     return throw ();
   }
@@ -34,7 +35,7 @@ class AuthImpl extends Auth {
       },
     );
     if (response.statusCode == 201) {
-      return User.fromMap(response.data["user"]);
+      return User.fromMap(response.data["user"] as Map<String, dynamic>);
     }
     return throw ();
   }

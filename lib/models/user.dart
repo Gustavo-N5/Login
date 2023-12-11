@@ -6,8 +6,7 @@ class User {
   final String email;
   final String firstname;
   final String lastname;
-  final int age;
-
+  final String age;
   User({
     this.id,
     required this.email,
@@ -32,7 +31,7 @@ class User {
       email: map['email'] as String,
       firstname: map['firstname'] as String,
       lastname: map['lastname'] as String,
-      age: map['age'] as int,
+      age: map['age'] as String,
     );
   }
 

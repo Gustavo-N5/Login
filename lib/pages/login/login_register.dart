@@ -23,8 +23,8 @@ class _LoginRegisterState extends State<LoginRegister> {
   Widget build(BuildContext context) {
     return BlocBuilder<LoginBloc, LoginState>(
       builder: (context, state) {
-        if (state is LogedState) {
-          return Home();
+        if (state is LogedState || state is Registed) {
+          return const Home();
         } else {
           return const Login();
         }

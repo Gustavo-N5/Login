@@ -8,13 +8,20 @@ class LoginInit extends LoginState {}
 class LogonState extends LoginState {}
 
 class LogedState extends LoginState {
-  User usuario;
+  User user;
 
   LogedState({
-    required this.usuario,
+    required this.user,
   });
 }
 
 class LoginNotFound extends LoginState {}
 
-class Registed extends LoginState {}
+class Registed extends LoginState {
+  User user;
+  Registed({
+    required this.user,
+  });
+}
+
+class LogoutState extends LoginState {}
